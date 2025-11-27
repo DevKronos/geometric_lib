@@ -1,144 +1,132 @@
-# Описание решения
-Данная библиотека создана для работы с геометрическими фигурами в Python
+# Solution Description
+This library is designed for working with geometric shapes in Python.
 
-# Описание функций
+# Function Descriptions
 ## Circle.py
 ### area(r)
-Возвращает площадь круга по заданному радиусу
+Returns the area of a circle given its radius.
 
-__Параметры:__  
-&emsp;r (float): радиус круга
+__Parameters:__  
+&emsp;r (float): radius of the circle
 
-__Возвращаемое значение:__  
-&emsp;math.pi\*r\*r (float): площадь круга по формуле
+__Return value:__  
+&emsp;float: area of the circle calculated by the standard formula
 
-__Пример вызова:__
+__Example usage:__
 &emsp;```area(4)   //50,2654824574```
 ### perimeter(r)
-Возвращает периметр круга по заданному радиусу
+Returns the perimeter (circumference) of a circle given its radius.
 
-__Параметры:__  
-&emsp;r (float): радиус круга
+__Parameters:__  
+&emsp;r (float): radius of the circle
 
-__Возвращаемое значение:__  
-&emsp;2\*math.pi\*r (float): длина окружности по формуле
+__Return value:__  
+&emsp;float: circumference of the circle calculated by the standard formula
 
-__Пример вызова:__
+__Example usage:__
 &emsp;```perimeter(4)   //25,1327411228```
 
 ## Square.py
 ### area(a)
-Возвращает площадь квадрат по заданной стороне
+Returns the area of a square given the length of its side.
 
-__Параметры:__  
-&emsp;a (float): сторона квадрата
+__Parameters:__  
+&emsp;a (float): side length of the square
 
-__Возвращаемое значение:__  
-&emsp;a\*a (float): площадь квадрата по формуле
+__Return value:__  
+&emsp; float: the area of the square calculated by the standard formula
 
-__Пример вызова:__
+__Example usage:__
 &emsp;```area(3)   //9```
 
 ### perimeter(a)
-Возвращает периметр квадрата по заданной стороне
+Returns the perimeter of a square given the length of its side.
 
-__Параметры:__  
-&emsp;a (float): сторона квадрата
+__Parameters:__  
+&emsp;a (float): side length of the square
 
-__Возвращаемое значение:__  
-&emsp;4\*a (float): периметр квадрата по формуле
+__Return value:__  
+&emsp;float: perimeter of the square calculated by the standard formula
 
-__Пример вызова:__
+__Example usage:__
 &emsp;```perimeter(3)   //12```
 
 ## Rectangle.py
 ### area(a, b)
-Возвращает площадь прямоугольника по заданным сторонам
+Returns the area of a rectangle given the lengths of its two adjacent sides.
 
-__Параметры:__  
-&emsp;a (float): сторона прямоугольника  
-&emsp;b (float): сторона прямоугольника
+__Parameters:__  
+&emsp;a (float): one side of the rectangle
+&emsp;b (float): other side of the rectangle
 
-__Возвращаемое значение:__  
-&emsp;a\*b (float): площадь прямоугольника по формуле
+__Return value:__  
+&emsp;float: the area of the rectangle calculated by the standard formula
 
-__Пример вызова:__
+__Example usage:__
 &emsp;```area(4, 2)   //8```
 
 ### perimeter(a, b)
-Возвращает периметр прямоугольника по заданным сторонам
+Returns the perimeter of a rectangle given the lengths of its two adjacent sides.
 
-__Параметры:__  
-&emsp;a (float): сторона прямоугольника  
-&emsp;b (float): сторона прямоугольника
+__Parameters:__  
+&emsp;a (float): one side of the rectangle
+&emsp;b (float): other side of the rectangle
 
-__Возвращаемое значение:__  
-&emsp;2\*(a+b) (float): периметр прямоугольника по формуле
+__Return value:__  
+&emsp;float: perimeter of the rectangle calculated by the standard formula
 
-__Пример вызова:__
+__Example usage:__
 &emsp;```perimeter(4, 2)   //12```
 
 ## Triangle.py
 ### area(a, h)
-Возвращает площадь треугольника по заданной стороне и высоте
+Returns the area of a triangle given its base and corresponding height.
 
-__Параметры:__  
-&emsp;a (float): сторона треугольника  
-&emsp;h (float): высота треугольника
+__Parameters:__  
+&emsp;a (float): base of the triangle  
+&emsp;h (float): height corresponding to the base
 
-__Возвращаемое значение:__  
-&emsp;a\*h/2 (float): площадь треугольника по формуле
+__Return value:__  
+&emsp;float:  area of the triangle calculated by the standard formula
 
-__Пример вызова:__
+__Example usage:__
 &emsp;```area(3, 4)   //6```
 
 ### perimeter(a, b, c)
-Возвращает периметр треугольника по заданным сторонам
+Returns the perimeter of a triangle given the lengths of its three sides.
 
-__Параметры:__  
-&emsp;a (float): сторона треугольника  
-&emsp;b (float): сторона треугольника  
-&emsp;c (float): сторона треугольника
+__Parameters:__  
+&emsp;a (float): one side of the triangle  
+&emsp;b (float): another side of the triangle
+&emsp;c (float): third side of the triangle
 
-__Возвращаемое значение:__  
-&emsp;a+b+с (float): периметр треугольника по формуле
+__Return value:__  
+&emsp;float: perimeter of the triangle calculated by the standard formula
 
-__Пример вызова:__
+__Example usage:__
 &emsp;```perimeter(3, 4, 5)   //12```
 
-# История изменения проекта
-## Коммит "Circle and square added"
-__Хэш:__   8ba9aeb3cea847b63a91ac378a2a6db758682460
+# Project History
+- __Commit "Circle and square added"__
+    - Created circle.py and square.py  
+    - Added area and perimeter functions to each file
 
-__Изменения:__  
-&emsp;Созданы файлы circle.py и square.py  
-&emsp;Добавлены функции area и perimeter в каждый файл
+- __Commit "Docs added"__  
+    - Created docs directory    
+    - Created README.md file  
+    - Added content to README
 
-## Коммит "Docs added"
-__Хэш:__   d078c8d9ee6155f3cb0e577d28d337b791de28e2
+- __Commit "Add file for Ractangle"__
+    - Created rectangle.py  
+    - Added area and perimeter functions to rectangle.py
 
-__Изменения:__  
-&emsp;Создана папка docs    
-&emsp;Создан файл README.md  
-&emsp;Добавлено содержание в README
+- __Commit "Add File for Triangle & Fix Rectangle"__
+    - Created triangle.py  
+    - Added area and perimeter functions to triangle.py  
+    - Fixed the perimeter function in rectangle.py
 
-## Коммит "Add file for Ractangle"
-__Хэш:__   ff22f24c5da7d6dcd5ee2eb7c5241fb050c10cb9
+- __Commit "Add descriptions for functions"__
+    - Added docstrings for area and perimeter functions in all files
 
-__Изменения:__  
-&emsp;Создан файл rectangle.py  
-&emsp;Добавлены функции area и perimeter в rectangle.py
-
-## Коммит "Add File for Triangle & Fix Rectangle"
-__Хэш:__   848edb6e1b2029431fa85ab656e6ffdec6a8608a
-
-__Изменения:__  
-&emsp;Создан файл triangle.py  
-&emsp;Добавлены функции area и perimeter в triangle.py  
-&emsp;Исправлена функция perimeter в rectangle.py
-
-## Коммит "Add descriptions for functions"
-__Хэш:__   c59dd8c9a2973adde72c2a430dac43c87597a605
-
-__Изменения:__  
-&emsp;Добавлены описания функций area и perimeter в каждый файл
+- __Commit "Unit tests"__
+    - Added unittest in each .py file
