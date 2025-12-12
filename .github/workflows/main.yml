@@ -29,10 +29,10 @@ jobs:
           python-version: '3.9'
       - name: Run Tests
         run: |
-          python -m unittest rectangle.py
-          python -m unittest square.py
-          python -m unittest circle.py
-          python -m unittest triangle.py
+          python -m unittest rectangle -v
+          python -m unittest square -v
+          python -m unittest circle -v
+          python -m unittest triangle -v
         
       
       
