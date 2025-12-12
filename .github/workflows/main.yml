@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CI/CD
 
 # Controls when the workflow will run
 on:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows_latest]
+        os: [ubuntu-latest, windows-latest]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -29,10 +29,7 @@ jobs:
           python-version: '3.9'
       - name: Run Tests
         run: |
-          python -m unittest rectangle -v
-          python -m unittest square -v
-          python -m unittest circle -v
-          python -m unittest triangle -v
+          python -m unittest rectangle square circle triangle -v
         
       
       
