@@ -29,7 +29,7 @@ jobs:
           python-version: '3.9'
       - name: Run Tests
         run: |
-          python -m unittet discover -p "*.py" -v
+          python -m unittest discover -p "*.py" -v
         
       
       
