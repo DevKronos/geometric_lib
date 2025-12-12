@@ -130,3 +130,6 @@ __Example usage:__
 
 - __Commit "Unit tests"__
     - Added unittest in each .py file
+
+-__Commit "CI/CD"__
+    - Added main.yml file for ci/cd
