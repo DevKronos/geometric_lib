@@ -18,6 +18,9 @@ def perimeter(a, b, c):
     if (a < 0) or (b < 0) or (c < 0):
         raise ValueError("Length must be non-negative number")
     
+    if (2 * max(a, b, c) >= a + b + c):
+        raise ValueError("Traingle isn't satisfied triangle's inequation")
+    
     return a + b + c
 
 class TriangleTestCase(unittest.TestCase):
