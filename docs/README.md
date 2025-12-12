@@ -133,3 +133,6 @@ __Example usage:__
 
 -__Commit "CI/CD"__
     - Added main.yml file for ci/cd
+
+- __Commit "Upgrade CI/CD"__
+    - Upgrade main.yml file
