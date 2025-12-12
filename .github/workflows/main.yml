@@ -16,19 +16,18 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   tests:
-    name: Run Tests
-    runs-on: [ubuntu-latest, windows_latest]
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows_latest]
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.9'
-          architecture: 'x64'
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-      - name: Discover and run unittests
+      - name: Run Tests
         run: |
           python -m unittet discover -p "*.py" -v
         
